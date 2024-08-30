@@ -72,7 +72,71 @@ students_marks=[
     ['Harvid',['57','56','33','78','76']]
 ]
 # print(students_marks[0][1][1])
-for student in students_marks [1:]:
-    name=student[0]
-    marks_subject_B=student[1][1]
-    print(name,marks_subject_B)
+# student_with_marks_in_B=[]
+# for student in students_marks [1:]:
+#     name=student[0]
+#     marks_subject_B=student[1][1]
+#     # print(name,marks_subject_B,end=" ")
+
+#     student_with_marks_in_B.append([marks_subject_B,name])
+#     print(sorted(student_with_marks_in_B,reverse=True))
+
+# student_with_marks_in_C=[]
+# for student in students_marks[1:]:
+#     name=student[0]
+#     marks_in_C=student[1][2]
+#     student_with_marks_in_C.append([marks_in_C,name])
+#     print(sorted(student_with_marks_in_C))
+
+# my_list=['lakshay','sanad','aravind','aishwarya','prateek']
+# my_list=['haryana','punjab','rajasthan','karnataka','goa']
+# find_a=[]
+# for name in my_list:
+#     letter_a=name.find('a')
+#     find_a.append(letter_a)
+#     print(find_a)
+
+# for s in my_list:
+#     split_a=s.split('a')
+#     find_a.append(len(split_a))
+#     print(find_a)
+
+# def welcome():
+#     print("Welcome again to python coding")
+
+# welcome()
+
+
+# def home(name):
+#     return "welcome to maseno " + name
+
+# name = input("Enter your name: ")  # No need to use str() as input() already returns a string
+# print(home(name))  # This will print the output returned by the function
+
+# def areaRectangle(length,width):
+#     area=length*width
+#     return print('The area of the rectangle is: ',area)
+# length=int(input("Enter the length:"))
+# width=int(input("Enter the width:"))
+
+# areaRectangle(length,width)
+
+# def function(*args):
+#     for r in args:
+#         print(r)
+# function(1,2,'braison',1,'james')
+
+# def function(**kwargs):
+#     for key,value in kwargs.items():
+#         print(key,value)
+
+# function(a=3,b=4,t=11)
+
+name="my outer name is braison"
+def names():
+    global name
+    name='my inner name is wabwire'
+    print(name)
+
+print(name)
+names()
