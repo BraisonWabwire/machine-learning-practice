@@ -204,10 +204,20 @@ def mult(x,y):
 
 # print(red(4))
 
-def number(n):
-    if n==2:
-        return 1
-    else:
-        return number(n-1)+(n+1)
+# def number(n):
+#     if n==2:
+#         return 1
+#     else:
+#         return number(n-1)+(n+1)
     
-print(number(5))
+# print(number(5))
+
+# m=open('C:/Users/brais/OneDrive/Desktop/machine learning practice/m.txt')
+# m.seek(15)
+# print(m.read())
+
+import datetime
+datetime_obj=datetime.datetime.now()
+today_obj=datetime.date.today()
+print(datetime_obj)
+print(today_obj)
