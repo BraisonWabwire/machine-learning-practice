@@ -132,11 +132,74 @@ students_marks=[
 
 # function(a=3,b=4,t=11)
 
-name="my outer name is braison"
-def names():
-    global name
-    name='my inner name is wabwire'
-    print(name)
+# name="variable outside function"
+# def names():
+#     global name
+#     name='variable inside function'
+#     return print(name)
 
-print(name)
-names()
+# names()
+# print(name)
+
+# x=lambda a: a +20
+# print(x(20))
+
+
+
+# def odd(x):
+#     if x%2==0:
+#         return True
+#     else:
+#         return False
+    
+# numbers=[10,15,34,20,12,9,45,12]
+
+# filtered_numbers=list(filter(lambda x: x %2!=0,numbers))
+# print(filtered_numbers)
+
+# def factorial(n):
+#     if (n==0) or (n==1):
+#         return 1
+#     else:
+#         return n*factorial(n-1)
+    
+# value_n=int(input("Enter value of n:"))
+# result=factorial(value_n)
+# print(result)
+
+# def isDivisibleThree(x):
+#     return x%3==0
+
+# def isDivisibleTwo(x):
+#     return x%2==0
+
+# x=list(filter(isDivisibleThree, range(0,31)))
+# print(x)
+# y=list(filter(isDivisibleTwo,range(1,10)))
+# print(y)
+# z=list(filter(lambda x: x%2==0,range(2,30)))
+# print(z)
+
+# def square(x):
+#     return x*x
+
+# x=list(map(square,[1,2,3,4,5]))
+# print(x)
+
+from functools import reduce
+
+def add(x,y):
+    return x+y
+def mult(x,y):
+    return x*y
+
+# a=reduce(add,[1,2,3,4,5,6,7])
+# print(a)
+
+# r=reduce(add,["my"," ","name"," ","is"," ","braison"])
+# print(r)
+
+# def red(n):
+#     return reduce(mult,range(1, n+1))
+
+# print(red(4))
