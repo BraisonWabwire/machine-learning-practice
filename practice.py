@@ -203,3 +203,11 @@ def mult(x,y):
 #     return reduce(mult,range(1, n+1))
 
 # print(red(4))
+
+def number(n):
+    if n==2:
+        return 1
+    else:
+        return number(n-1)+(n+1)
+    
+print(number(5))
