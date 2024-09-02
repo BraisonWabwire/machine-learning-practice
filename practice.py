@@ -216,8 +216,22 @@ def mult(x,y):
 # m.seek(15)
 # print(m.read())
 
-import datetime
-datetime_obj=datetime.datetime.now()
-today_obj=datetime.date.today()
-print(datetime_obj)
-print(today_obj)
+# import datetime
+# datetime_obj=datetime.datetime.now()
+# today_obj=datetime.date.today()
+# print(datetime_obj)
+# print(today_obj)
+
+# file_obje=open('m.txt',"rb")
+# print(file_obje.read())
+# file_obje.close()
+
+# import numpy as np
+# v=np.__version__
+# print(v)
+
+from scipy.misc import derivative
+def my_fun(x):
+    return x**2+5
+y=derivative(func=my_fun,x0=2)
+print(y)
