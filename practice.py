@@ -230,8 +230,15 @@ def mult(x,y):
 # v=np.__version__
 # print(v)
 
-from scipy.misc import derivative
-def my_fun(x):
-    return x**2+5
-y=derivative(func=my_fun,x0=2)
-print(y)
+# from scipy.misc import derivative
+# def my_fun(x):
+#     return x**2+5
+# y=derivative(func=my_fun,x0=2)
+# print(y)
+
+import matplotlib.pyplot as plt
+a=[1,2,3,4,5,6]
+b=[6,5,4,3,2,1]
+
+plt.plot(a,b)
+plt.show()
