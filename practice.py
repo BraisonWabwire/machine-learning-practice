@@ -236,9 +236,24 @@ def mult(x,y):
 # y=derivative(func=my_fun,x0=2)
 # print(y)
 
-import matplotlib.pyplot as plt
-a=[1,2,3,4,5,6]
-b=[6,5,4,3,2,1]
+# import matplotlib.pyplot as plt
+# a=[1,2,3,4,5,6]
+# b=[6,5,4,3,2,1]
 
-plt.plot(a,b)
-plt.show()
+# plt.plot(a,b)
+# plt.show()
+
+import pandas as pd
+data= pd.read_csv('employees.csv')
+
+# print(data.head())
+# print(data.isnull().sum())
+# import matplotlib.pyplot as plt
+
+# import seaborn as sns
+# # load an example dataset from seaborn
+# df = sns.load_dataset('tips')
+# # create a histogram
+# sns.histplot(df['total_bill'])
+# plt.title("Histogram of Total Bill")
+# plt.show()
