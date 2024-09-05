@@ -243,9 +243,6 @@ def mult(x,y):
 # plt.plot(a,b)
 # plt.show()
 
-import pandas as pd
-data= pd.read_csv('employees.csv')
-
 # print(data.head())
 # print(data.isnull().sum())
 # import matplotlib.pyplot as plt
@@ -257,3 +254,30 @@ data= pd.read_csv('employees.csv')
 # sns.histplot(df['total_bill'])
 # plt.title("Histogram of Total Bill")
 # plt.show()
+
+# null=data.isnull().sum()
+# print(null)
+
+# print(data.describe())
+# duplicates=data.duplicated()
+# data=data.drop_duplicates()
+
+# duplicates=data.duplicated()
+# print(duplicates.sum())
+# print(data.shape)
+
+# null=data.isnull().sum()
+# print(null)
+
+
+import pandas as pd
+data= pd.read_csv('employees.csv')
+# m=data.iloc[36]
+# print(m)
+f=data[data['JOB_ID']=='ST_MAN']
+print(f)
+
+m=data.iloc[[30,31,32,33,34]]
+print(m)
+
+m=data.loc
