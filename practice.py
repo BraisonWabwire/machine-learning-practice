@@ -270,14 +270,31 @@ def mult(x,y):
 # print(null)
 
 
-import pandas as pd
-data= pd.read_csv('employees.csv')
-# m=data.iloc[36]
+# import pandas as pd
+# data= pd.read_csv('employees.csv')
+# # m=data.iloc[36]
+# # print(m)
+# f=data[data['JOB_ID']=='ST_MAN']
+# print(f)
+
+# m=data.iloc[[30,31,32,33,34]]
 # print(m)
-f=data[data['JOB_ID']=='ST_MAN']
-print(f)
 
-m=data.iloc[[30,31,32,33,34]]
-print(m)
+# m=data.loc
 
-m=data.loc
+
+# concatenating differnt csvs to one csv
+import pandas as pd
+data1=pd.read_csv('employees.csv')
+data2=pd.read_csv('employees1.csv')
+data3=pd.read_csv('employees2.csv')
+
+# print(data1.head())
+# print(data2.head())
+# print(data3.head())
+
+combined_csv=[data1,data2,data3]
+
+data4=pd.concat(combined_csv,axis=0)
+print(data4.shape)
+print(data1.shape)
