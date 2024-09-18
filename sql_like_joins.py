@@ -6,4 +6,10 @@ students_data=pd.DataFrame({
     'marks':[28,22,27,14,18],
     'city':['nakuru','nairobi','nakuru','mombasa','kericho']
 })
-print(students_data)
+# print(students_data)
+
+state_mapping=pd.DataFrame({
+    'state':['Nakuru','mairobi','mombasa'],
+    'state':['nakuru','nairobi','mombasa']
+})
+print(state_mapping)
