@@ -15,3 +15,4 @@ state_mapping=pd.DataFrame({
 # print(state_mapping)
 students_data_merged=students_data.merge(state_mapping,how='left', on='city')
 print(students_data_merged)
+
