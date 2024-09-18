@@ -9,7 +9,9 @@ students_data=pd.DataFrame({
 # print(students_data)
 
 state_mapping=pd.DataFrame({
-    'state':['Nakuru','mairobi','mombasa'],
+    'city':['nakuru','nairobi','mombasa'],
     'state':['nakuru','nairobi','mombasa']
 })
-print(state_mapping)
+# print(state_mapping)
+students_data_merged=students_data.merge(state_mapping,how='left', on='city')
+print(students_data_merged)
